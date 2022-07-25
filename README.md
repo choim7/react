@@ -99,3 +99,32 @@ const dv = (
     <div>hello jsx</div>
 )
 ```
+
+# 在jsx中使用js表达式
+* 嵌入js表达式
+* 数据存储在js中
+* 语法：{js表达式}
+* 语法中是单打括号，不是双大括号
+```
+const name = 'Jack'
+const dv = (
+    <div>你好，我叫:{name}</div>
+)
+```
+
+```
+// jsx中使用js表达式
+const name = 'MJ'
+const age =19
+
+const title = (
+    <h1>
+        Hello JSX, {name}, 年龄：{age}
+    </h1>
+)
+
+//渲染react元素
+ReactDOM.render(title,document.getElementById('root'))
+```
+
+# jsx的条件渲染
